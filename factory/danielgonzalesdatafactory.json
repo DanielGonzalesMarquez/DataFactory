@@ -1,0 +1,9 @@
+{
+	"name": "danielgonzalesdatafactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "dd7c460f-2df2-4306-ab57-bab8c6bb0dbe",
+		"tenantId": "703876c4-5a2b-4dc6-88e9-43a045027832"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"name": "pipeline_Transformacion",
+	"properties": {
+		"parameters": {
+			"Source": {
+				"type": "string"
+			},
+			"Final": {
+				"type": "string"
+			}
+		},
+		"annotations": []
+	}
+}

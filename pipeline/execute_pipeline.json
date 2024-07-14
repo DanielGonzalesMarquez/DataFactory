@@ -1,0 +1,47 @@
+{
+	"name": "execute_pipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute Ingesta",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "pipeline_Transformacion",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			},
+			{
+				"name": "Execute transformacion",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "Execute Ingesta",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "pipeline_Transformacion",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"annotations": []
+	}
+}

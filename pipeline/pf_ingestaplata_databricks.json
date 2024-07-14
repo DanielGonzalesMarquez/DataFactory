@@ -13,7 +13,14 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/daniel2001121220@outlook.com.pe/Capa Plata"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricks_DataFactory",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"annotations": []
